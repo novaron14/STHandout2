@@ -20,3 +20,11 @@ test('handles multiple inputs', () => {
 test('handles single uppercase input', () => {
   expect(greet(['BOB'])).toBe('HELLO BOB!');
 });
+
+test('handles double uppercase input', () => {
+  expect(greet(['BOB', 'ALICE'])).toBe('HELLO BOB AND ALICE!');
+});
+
+test('handles multiple uppercase input', () => {
+  expect(greet(['BOB', 'ALICE', 'DAN'])).toBe('HELLO BOB, ALICE AND DAN!');
+});

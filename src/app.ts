@@ -13,6 +13,8 @@ export function greet(names: string[]): string {
   }
   if(upperCaseNames.length==1){
     shoutingGreetings = `HELLO ${upperCaseNames[0]}!`
+  }else if(upperCaseNames.length>1){
+    shoutingGreetings = `HELLO ${upperCaseNames.slice(0, -1).join(', ')} AND ${upperCaseNames.slice(-1)}!`;
   }
   return `${shoutingGreetings} ${normalGreetings}`.trim();
 }
