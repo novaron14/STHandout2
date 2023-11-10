@@ -16,5 +16,5 @@ export function greet(names: string[]): string {
   }else if(upperCaseNames.length>1){
     shoutingGreetings = `HELLO ${upperCaseNames.slice(0, -1).join(', ')} AND ${upperCaseNames.slice(-1)}!`;
   }
-  return `${shoutingGreetings} ${normalGreetings}`.trim();
+  return `${normalGreetings} ${shoutingGreetings}`.trim();
 }
