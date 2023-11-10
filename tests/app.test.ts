@@ -28,3 +28,16 @@ test('handles double uppercase input', () => {
 test('handles multiple uppercase input', () => {
   expect(greet(['BOB', 'ALICE', 'DAN'])).toBe('HELLO BOB, ALICE AND DAN!');
 });
+
+
+test('handles multiple uppercase input', () => {
+  expect(greet(['BOB', 'David', 'ALICE', 'Brigette', 'DAN'])).toBe('HELLO BOB, ALICE AND DAN! Hello David and Brigette!');
+});
+
+test('handles multiple uppercase input', () => {
+  expect(greet(['BOB', 'David'])).toBe('HELLO BOB! Hello David!');
+});
+
+test('handles multiple uppercase input', () => {
+  expect(greet(['BOB', 'David', 'ALICE', 'Brigette'])).toBe('HELLO BOB AND ALICE! Hello David and Brigette!');
+});
