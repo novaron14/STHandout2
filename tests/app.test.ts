@@ -7,3 +7,12 @@ test('handles no input', () => {
 test('handles single input', () => {
   expect(greet(['Bob'])).toBe('Hello Bob!');
 });
+
+
+test('handles multiple inputs', () => {
+  expect(greet(['Alice', 'Bob'])).toBe('Hello Alice and Bob!');
+});
+
+test('handles multiple inputs', () => {
+  expect(greet(['Alice', 'Bob', 'Jerry'])).toBe('Hello Alice, Bob and Jerry!');
+});
